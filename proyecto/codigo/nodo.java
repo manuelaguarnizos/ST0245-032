@@ -1,5 +1,6 @@
 public class nodo 
 {
+    
     private datos datos;
     public nodo(datos a)
     {

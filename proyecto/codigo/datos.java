@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class datos 
 {
     String label;
@@ -7,6 +8,8 @@ public class datos
     double i;
     double et;
     double eh;
+    String[] s;
+    double[] arr;
     public datos(String[] s)
     {
         ph=Double.parseDouble(s[0]);
@@ -16,6 +19,21 @@ public class datos
         et=Double.parseDouble(s[4]);
         eh=Double.parseDouble(s[5]);
         label=s[s.length-1];
+        arr[0]=ph;
+        arr[1]=st;
+        arr[2]=sm;
+        arr[3]=i;
+        arr[4]=et;
+        arr[5]=eh;
+        this.s=s;
+    }
+
+    public double[] getArr() {
+        return arr;
+    }
+    public String tostring()
+    {
+        return Arrays.toString(s);
     }
 
     public String getLabel() {
